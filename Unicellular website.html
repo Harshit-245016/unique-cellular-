@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Unicellular Pvt Ltd – Telecom Infrastructure Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
 :root{
   --navy:#040c1b;--deep:#071428;--card:#0b1e38;--card2:#0d2040;
   --blue:#0a6cf5;--blue-lt:#2584ff;--cyan:#00d4ff;--accent:#f5a623;
@@ -346,3 +357,546 @@ footer{position:relative;z-index:1}
   .fbot .container{flex-direction:column;gap:8px;text-align:center}
   .cform{padding:28px 20px}
 }
+</style>
+</head>
+<body>
+
+<canvas id="pcanvas"></canvas>
+<div class="cdot" id="cdot"></div>
+<div class="cring" id="cring"></div>
+
+<!-- ════════════ NAVBAR ════════════ -->
+<header id="navbar">
+  <div class="nav-c">
+    <a href="#home" class="logo">
+      <div class="logo-i">
+        <span class="ls"></span><span class="ls"></span><span class="ls"></span>
+      </div>
+      <div class="logo-t">
+        <span class="logo-m">UNICELLULAR</span>
+        <span class="logo-s">PVT LTD</span>
+      </div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#whyus">Why Us</a>
+      <a href="#contact" class="ncta">Get Quote</a>
+    </nav>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ════════════ HERO ════════════ -->
+<section id="home" class="hero">
+  <div class="hgrid"></div>
+  <div class="hcontent">
+    <div class="hbadge ru"><span class="bdot"></span>Certified Telecom Infrastructure Partner</div>
+    <h1 class="htitle ru d1">
+      <span class="line">CONNECTING</span>
+      <span class="line aline" id="glitchLine">THE NATION</span>
+      <span class="line">TOWER BY TOWER</span>
+    </h1>
+    <p class="hdesc ru d2">End-to-end telecom infrastructure solutions — from tower erection to fiber optic networks — powering seamless connectivity across every zone we serve.</p>
+    <div class="hact ru d3">
+      <a href="#services" class="btn-p"><span>Explore Services</span><i class="fa fa-arrow-right"></i></a>
+      <a href="#contact" class="btn-o"><span>Contact Us</span></a>
+    </div>
+    <div class="htags ru d4">
+      <span>Tower Installation</span><span>Fiber Optic</span><span>BTS Deployment</span><span>Civil Works</span><span>OFC Laying</span>
+    </div>
+  </div>
+
+  <div class="hvisual rr d2">
+    <div class="towerw">
+      <div class="tbody">
+        <div class="srings"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div></div>
+        <div class="ttop"></div>
+        <div class="tlight"></div>
+        <div class="tseg s1"></div>
+        <div class="tseg s2"></div>
+        <div class="tseg s3"></div>
+        <div class="tseg s4"></div>
+        <div class="dl dl1"></div><div class="dl dl2"></div><div class="dl dl3"></div>
+      </div>
+      <div class="tbase"></div>
+    </div>
+  </div>
+  <div class="hscroll"><span>Scroll</span><div class="sline"></div></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ttrack" id="ttrack">
+    <span>Tower Erection</span><i class="fa fa-signal"></i>
+    <span>Fiber Optic Cabling</span><i class="fa fa-signal"></i>
+    <span>BTS Installation</span><i class="fa fa-signal"></i>
+    <span>OFC Laying</span><i class="fa fa-signal"></i>
+    <span>Network Infrastructure</span><i class="fa fa-signal"></i>
+    <span>RF Planning</span><i class="fa fa-signal"></i>
+    <span>Civil Works</span><i class="fa fa-signal"></i>
+    <span>Tower Maintenance</span><i class="fa fa-signal"></i>
+    <span>Power Solutions</span><i class="fa fa-signal"></i>
+    <span>FTTH Deployment</span><i class="fa fa-signal"></i>
+    <span>Tower Erection</span><i class="fa fa-signal"></i>
+    <span>Fiber Optic Cabling</span><i class="fa fa-signal"></i>
+    <span>BTS Installation</span><i class="fa fa-signal"></i>
+    <span>OFC Laying</span><i class="fa fa-signal"></i>
+    <span>Network Infrastructure</span><i class="fa fa-signal"></i>
+    <span>RF Planning</span><i class="fa fa-signal"></i>
+    <span>Civil Works</span><i class="fa fa-signal"></i>
+    <span>Tower Maintenance</span><i class="fa fa-signal"></i>
+    <span>Power Solutions</span><i class="fa fa-signal"></i>
+    <span>FTTH Deployment</span><i class="fa fa-signal"></i>
+  </div>
+</div>
+
+<!-- ════════════ SERVICES ════════════ -->
+<section id="services" class="section svcsec">
+  <div class="container">
+    <div class="sheader ru">
+      <span class="stag">What We Do</span>
+      <h2 class="stitle">Our Core Services</h2>
+      <p class="sdesc">Comprehensive telecom infrastructure services delivered with precision, safety, and speed.</p>
+    </div>
+    <div class="sgrid">
+      <div class="sc ru d1" data-tilt><div class="cglow"></div>
+        <div class="sico"><i class="fa fa-broadcast-tower"></i></div>
+        <h3>Tower Erection & Installation</h3>
+        <p>Ground-based towers, rooftop structures, and monopoles — installed with precision and adherence to industry safety standards.</p>
+        <ul><li>GBT & RTT Towers</li><li>Monopoles & Lattice Towers</li><li>Foundation & Civil Works</li></ul>
+        <div class="carrow"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="sc ru d2" data-tilt><div class="cglow"></div>
+        <div class="sico"><i class="fa fa-wifi"></i></div>
+        <h3>BTS / NE Installation</h3>
+        <p>End-to-end Base Transceiver Station deployment for 4G & 5G networks — antenna mounting, feeder cabling, power integration.</p>
+        <ul><li>Antenna Alignment & Mounting</li><li>Feeder & Jumper Installation</li><li>Power Integration</li></ul>
+        <div class="carrow"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="sc ru d3" data-tilt><div class="cglow"></div>
+        <div class="sico"><i class="fa fa-project-diagram"></i></div>
+        <h3>Optical Fiber Cable (OFC) Laying</h3>
+        <p>Underground and aerial OFC laying across urban and semi-urban landscapes with minimal disruption and maximum durability.</p>
+        <ul><li>Underground HDD & Trenching</li><li>Aerial OFC Stringing</li><li>Splicing & Testing</li></ul>
+        <div class="carrow"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="sc ru d1" data-tilt><div class="cglow"></div>
+        <div class="sico"><i class="fa fa-home"></i></div>
+        <h3>FTTH / Last Mile Connectivity</h3>
+        <p>Fiber-to-the-Home deployment connecting end users to high-speed broadband networks through reliable last-mile infrastructure.</p>
+        <ul><li>FTTH Network Design</li><li>ONT/OLT Installation</li><li>Last-Mile Fiber Drop</li></ul>
+        <div class="carrow"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="sc ru d2" data-tilt><div class="cglow"></div>
+        <div class="sico"><i class="fa fa-tools"></i></div>
+        <h3>Network O&M Services</h3>
+        <p>Round-the-clock operations and maintenance ensuring uptime, performance, and quick fault resolution across your telecom network.</p>
+        <ul><li>Preventive Maintenance</li><li>Fault Resolution & Rollout</li><li>24×7 Field Support</li></ul>
+        <div class="carrow"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="sc ru d3" data-tilt><div class="cglow"></div>
+        <div class="sico"><i class="fa fa-bolt"></i></div>
+        <h3>Power & Energy Solutions</h3>
+        <p>Reliable power solutions for telecom sites — solar integration, DG sets, battery systems and energy audits for uninterrupted operations.</p>
+        <ul><li>Solar Power Systems</li><li>Battery Backup & DG</li><li>Energy Auditing</li></ul>
+        <div class="carrow"><i class="fa fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ ABOUT ════════════ -->
+<section id="about" class="section aboutsec">
+  <div class="container">
+    <div class="agrid">
+      <div class="awrap rl">
+        <div class="abg"></div>
+        <div class="atower"><i class="fa fa-broadcast-tower"></i></div>
+        <div class="asc">
+          <div class="asci"><span class="asnn" data-count="500">0</span><span>+</span><span class="ascl">Sites Deployed</span></div>
+          <div class="ascdiv"></div>
+          <div class="asci"><span class="asnn" data-count="12">0</span><span>+</span><span class="ascl">Years Experience</span></div>
+          <div class="ascdiv"></div>
+          <div class="asci"><span class="asnn" data-count="50">0</span><span>+</span><span class="ascl">Expert Workforce</span></div>
+        </div>
+        <div class="acbadge"><i class="fa fa-shield-alt"></i><span>ISO Certified<br/>Infrastructure Partner</span></div>
+      </div>
+      <div class="acon rr">
+        <span class="stag">Who We Are</span>
+        <h2 class="stitle">Building Tomorrow's<br/>Telecom Infrastructure</h2>
+        <p>Unicellular Pvt Ltd is a leading telecom infrastructure company delivering cutting-edge deployment, installation, and maintenance services to major telecom operators and ISPs.</p>
+        <p>With over a decade of expertise, our seasoned team of engineers and technicians ensures every project — from a single tower installation to large-scale fiber rollouts — is executed flawlessly, on time, and within budget.</p>
+        <div class="afeats">
+          <div class="afi"><div class="afic"><i class="fa fa-check-circle"></i></div><div><strong>Proven Track Record</strong><span>Trusted by top-tier telecom operators across multiple projects</span></div></div>
+          <div class="afi"><div class="afic"><i class="fa fa-check-circle"></i></div><div><strong>Skilled Workforce</strong><span>Certified engineers, climbers & civil teams with rigorous safety training</span></div></div>
+          <div class="afi"><div class="afic"><i class="fa fa-check-circle"></i></div><div><strong>End-to-End Solutions</strong><span>From RF planning and civil works to commissioning and O&M</span></div></div>
+        </div>
+        <a href="#contact" class="btn-p"><span>Partner With Us</span><i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ STATS ════════════ -->
+<section id="stats" class="section statsec">
+  <div class="stbgo"></div>
+  <div class="container">
+    <div class="sheader ru"><span class="stag">Our Impact</span><h2 class="stitle">Numbers That Speak</h2></div>
+    <div class="statg">
+      <div class="stc ru d1"><div class="stico"><i class="fa fa-broadcast-tower"></i></div><div class="stn"><span class="counter" data-target="500">0</span><span class="stplus">+</span></div><div class="stl">Towers Installed</div></div>
+      <div class="stc ru d2"><div class="stico"><i class="fa fa-ruler-combined"></i></div><div class="stn"><span class="counter" data-target="2000">0</span><span class="stplus">+ KM</span></div><div class="stl">Fiber Cable Laid</div></div>
+      <div class="stc ru d3"><div class="stico"><i class="fa fa-users"></i></div><div class="stn"><span class="counter" data-target="50">0</span><span class="stplus">+</span></div><div class="stl">Skilled Professionals</div></div>
+      <div class="stc ru d4"><div class="stico"><i class="fa fa-handshake"></i></div><div class="stn"><span class="counter" data-target="15">0</span><span class="stplus">+</span></div><div class="stl">Telecom Clients</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ CLIENTS ════════════ -->
+<section class="section clsec">
+  <div class="container">
+    <div class="sheader ru"><span class="stag">Trusted By</span><h2 class="stitle">Our Telecom Partners</h2></div>
+    <div class="clscroll">
+      <div class="cltrack">
+        <div class="cllogo"><span>Airtel</span></div><div class="cllogo"><span>Jio</span></div>
+        <div class="cllogo"><span>Vodafone Idea</span></div><div class="cllogo"><span>BSNL</span></div>
+        <div class="cllogo"><span>Indus Towers</span></div><div class="cllogo"><span>ATC India</span></div>
+        <div class="cllogo"><span>Sterlite Tech</span></div><div class="cllogo"><span>Ericsson</span></div>
+        <div class="cllogo"><span>Nokia</span></div><div class="cllogo"><span>Huawei</span></div>
+        <div class="cllogo"><span>Airtel</span></div><div class="cllogo"><span>Jio</span></div>
+        <div class="cllogo"><span>Vodafone Idea</span></div><div class="cllogo"><span>BSNL</span></div>
+        <div class="cllogo"><span>Indus Towers</span></div><div class="cllogo"><span>ATC India</span></div>
+        <div class="cllogo"><span>Sterlite Tech</span></div><div class="cllogo"><span>Ericsson</span></div>
+        <div class="cllogo"><span>Nokia</span></div><div class="cllogo"><span>Huawei</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ PROJECTS ════════════ -->
+<section id="projects" class="section projsec">
+  <div class="container">
+    <div class="sheader ru"><span class="stag">Portfolio</span><h2 class="stitle">Featured Projects</h2><p class="sdesc">A glimpse of the infrastructure we've proudly built and maintained.</p></div>
+    <div class="pgrid">
+      <div class="pc ru d1">
+        <div class="pimg pi1"><div class="pov"><span class="ptag">Tower Installation</span><h3>Multi-Operator GBT Deployment</h3><p>Installation of 60m GBT towers supporting multiple operator equipment with full civil and electrical works.</p></div></div>
+        <div class="pmeta"><span><i class="fa fa-broadcast-tower"></i>60 Sites</span><span><i class="fa fa-clock"></i>2024</span></div>
+      </div>
+      <div class="pc ru d2">
+        <div class="pimg pi2"><div class="pov"><span class="ptag">OFC Laying</span><h3>Urban Fiber Network Rollout</h3><p>500 km underground fiber optic cable laying across dense urban corridors using HDD and micro-trenching.</p></div></div>
+        <div class="pmeta"><span><i class="fa fa-ruler-combined"></i>500 KM</span><span><i class="fa fa-clock"></i>2023</span></div>
+      </div>
+      <div class="pc ru d3">
+        <div class="pimg pi3"><div class="pov"><span class="ptag">5G Deployment</span><h3>5G Small Cell Rollout</h3><p>Installation and commissioning of 5G small cells across commercial hubs for enhanced network densification.</p></div></div>
+        <div class="pmeta"><span><i class="fa fa-wifi"></i>120 Nodes</span><span><i class="fa fa-clock"></i>2024</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ WHY US ════════════ -->
+<section id="whyus" class="section whysec">
+  <div class="container">
+    <div class="sheader ru"><span class="stag">Why Unicellular</span><h2 class="stitle">The Unicellular Advantage</h2></div>
+    <div class="wgrid">
+      <div class="wc ru d1"><div class="wnum">01</div><i class="fa fa-hard-hat"></i><h3>Safety First Culture</h3><p>Every team member follows strict safety protocols. Zero-compromise on site safety, height work, and electrical standards.</p></div>
+      <div class="wc ru d2"><div class="wnum">02</div><i class="fa fa-tachometer-alt"></i><h3>Fast Turnaround</h3><p>Efficient project planning and dedicated resources ensure fastest deployment timelines without sacrificing quality.</p></div>
+      <div class="wc ru d3"><div class="wnum">03</div><i class="fa fa-certificate"></i><h3>Certified Excellence</h3><p>ISO-certified processes and compliance with DOT and TRAI guidelines on every project we undertake.</p></div>
+      <div class="wc ru d4"><div class="wnum">04</div><i class="fa fa-headset"></i><h3>24×7 Support</h3><p>Dedicated operations center with round-the-clock monitoring and rapid field response teams for all critical issues.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ CONTACT ════════════ -->
+<section id="contact" class="section consec">
+  <div class="container">
+    <div class="sheader ru"><span class="stag">Get In Touch</span><h2 class="stitle">Let's Build Together</h2><p class="sdesc">Have a project in mind? Our team is ready to deliver industry-leading telecom infrastructure solutions.</p></div>
+    <div class="congrid">
+      <div class="cinfo rl">
+        <div class="cii"><div class="cico"><i class="fa fa-map-marker-alt"></i></div><div><strong>Registered Office</strong><span>New Delhi – 110001, India</span></div></div>
+        <div class="cii"><div class="cico"><i class="fa fa-phone-alt"></i></div><div><strong>Call Us</strong><span>+91 98XXX XXXXX</span></div></div>
+        <div class="cii"><div class="cico"><i class="fa fa-envelope"></i></div><div><strong>Email</strong><span>info@unicellularpvtltd.com</span></div></div>
+        <div class="cii"><div class="cico"><i class="fa fa-clock"></i></div><div><strong>Working Hours</strong><span>Mon – Sat: 9:00 AM – 6:00 PM</span></div></div>
+        <div class="socl">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <form class="cform rr" id="cform">
+        <div class="frow">
+          <div class="fg"><label>Full Name</label><input type="text" placeholder="Your full name" required/></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX" required/></div>
+        </div>
+        <div class="fg"><label>Email Address</label><input type="email" placeholder="you@company.com" required/></div>
+        <div class="fg"><label>Service Required</label>
+          <select>
+            <option value="">Select a service</option>
+            <option>Tower Erection & Installation</option>
+            <option>BTS / NE Installation</option>
+            <option>OFC Laying</option>
+            <option>FTTH / Last Mile Connectivity</option>
+            <option>Network O&M Services</option>
+            <option>Power & Energy Solutions</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message</label><textarea rows="4" placeholder="Describe your project or requirement..."></textarea></div>
+        <button type="submit" class="btn-p fw"><span>Send Enquiry</span><i class="fa fa-paper-plane"></i></button>
+        <div class="fsuccess" id="fsuccess"><i class="fa fa-check-circle"></i> Thank you! We'll get back to you within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer>
+  <div class="ftop">
+    <div class="container">
+      <div class="fgrid">
+        <div class="fbrand">
+          <a href="#home" class="logo">
+            <div class="logo-i"><span class="ls"></span><span class="ls"></span><span class="ls"></span></div>
+            <div class="logo-t"><span class="logo-m">UNICELLULAR</span><span class="logo-s">PVT LTD</span></div>
+          </a>
+          <p>Leading telecom infrastructure company providing end-to-end tower, fiber, and network deployment solutions.</p>
+          <div class="socl">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="fcol"><h4>Services</h4><ul>
+          <li><a href="#services">Tower Erection</a></li><li><a href="#services">BTS Installation</a></li>
+          <li><a href="#services">OFC Laying</a></li><li><a href="#services">FTTH Deployment</a></li>
+          <li><a href="#services">Network O&M</a></li><li><a href="#services">Power Solutions</a></li>
+        </ul></div>
+        <div class="fcol"><h4>Company</h4><ul>
+          <li><a href="#about">About Us</a></li><li><a href="#projects">Projects</a></li>
+          <li><a href="#whyus">Why Us</a></li><li><a href="#contact">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul></div>
+        <div class="fcol"><h4>Contact</h4><ul class="fcon">
+          <li><i class="fa fa-map-marker-alt"></i>New Delhi – 110001, India</li>
+          <li><i class="fa fa-phone-alt"></i>+91 98XXX XXXXX</li>
+          <li><i class="fa fa-envelope"></i>info@unicellularpvtltd.com</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+  <div class="fbot">
+    <div class="container">
+      <span>© 2024 Unicellular Pvt Ltd. All Rights Reserved.</span>
+      <span>CIN: U74999DL2012PTC000000</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919800000000" class="wp" target="_blank"><i class="fab fa-whatsapp"></i><span class="wpp"></span></a>
+<button class="btt" id="btt"><i class="fa fa-chevron-up"></i></button>
+
+<script>
+(function(){
+"use strict";
+
+/* ── PARTICLES ── */
+const canvas=document.getElementById('pcanvas');
+const ctx=canvas.getContext('2d');
+let particles=[];
+
+function resize(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;}
+
+class Particle{
+  constructor(){this.reset();}
+  reset(){
+    this.x=Math.random()*canvas.width;
+    this.y=Math.random()*canvas.height;
+    this.vx=(Math.random()-.5)*.6;
+    this.vy=(Math.random()-.5)*.6;
+    this.r=Math.random()*1.8+.4;
+    this.a=Math.random()*.6+.1;
+    this.col=Math.random()>.5?'10,108,245':'0,212,255';
+  }
+  update(){
+    this.x+=this.vx;this.y+=this.vy;
+    if(this.x<0||this.x>canvas.width)this.vx*=-1;
+    if(this.y<0||this.y>canvas.height)this.vy*=-1;
+  }
+  draw(){
+    ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(${this.col},${this.a})`;ctx.fill();
+  }
+}
+
+function connect(){
+  const d=130;
+  for(let i=0;i<particles.length;i++)
+    for(let j=i+1;j<particles.length;j++){
+      const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
+      const dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<d){
+        ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);
+        ctx.strokeStyle=`rgba(10,108,245,${.15*(1-dist/d)})`;ctx.lineWidth=.6;ctx.stroke();
+      }
+    }
+}
+
+function init(){
+  const n=Math.min(Math.floor(canvas.width*canvas.height/18000),90);
+  particles=Array.from({length:n},()=>new Particle());
+}
+
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  particles.forEach(p=>{p.update();p.draw();});
+  connect();
+  requestAnimationFrame(animate);
+}
+
+window.addEventListener('resize',()=>{resize();init();});
+resize();init();animate();
+
+/* ── CURSOR ── */
+const dot=document.getElementById('cdot'),ring=document.getElementById('cring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  dot.style.left=mx+'px';dot.style.top=my+'px';
+});
+(function follow(){
+  rx+=(mx-rx)*.12;ry+=(my-ry)*.12;
+  ring.style.left=rx+'px';ring.style.top=ry+'px';
+  requestAnimationFrame(follow);
+})();
+document.querySelectorAll('a,button,.sc,.pc,.wc').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{dot.style.transform='translate(-50%,-50%) scale(2)';ring.style.borderColor='rgba(245,166,35,.8)';});
+  el.addEventListener('mouseleave',()=>{dot.style.transform='translate(-50%,-50%) scale(1)';ring.style.borderColor='rgba(0,212,255,.5)';});
+});
+
+/* ── NAVBAR ── */
+const nb=document.getElementById('navbar');
+const ham=document.getElementById('ham');
+const nl=document.getElementById('navLinks');
+window.addEventListener('scroll',()=>nb.classList.toggle('scrolled',window.scrollY>60));
+ham.addEventListener('click',()=>{ham.classList.toggle('open');nl.classList.toggle('open');document.body.style.overflow=nl.classList.contains('open')?'hidden':'';});
+nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');nl.classList.remove('open');document.body.style.overflow='';}));
+
+/* ── REVEAL ── */
+const revEls=document.querySelectorAll('.ru,.rl,.rr');
+const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+revEls.forEach(el=>revObs.observe(el));
+
+/* ── COUNTERS ── */
+function animCount(el,target,dur=2000){
+  let s=0;const step=target/(dur/16);
+  const t=setInterval(()=>{
+    s+=step;
+    if(s>=target){el.textContent=target.toLocaleString();clearInterval(t);}
+    else el.textContent=Math.floor(s).toLocaleString();
+  },16);
+}
+const cObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting&&!e.target.dataset.done){
+      e.target.dataset.done=1;
+      const t=parseInt(e.target.dataset.target||e.target.dataset.count,10);
+      animCount(e.target,t);
+    }
+  });
+},{threshold:.4});
+document.querySelectorAll('.counter,.asnn').forEach(el=>cObs.observe(el));
+
+/* ── TILT ── */
+document.querySelectorAll('[data-tilt]').forEach(c=>{
+  c.addEventListener('mousemove',e=>{
+    const r=c.getBoundingClientRect();
+    const rx2=((e.clientY-r.top-r.height/2)/r.height)*-8;
+    const ry2=((e.clientX-r.left-r.width/2)/r.width)*8;
+    c.style.transform=`translateY(-8px) perspective(600px) rotateX(${rx2}deg) rotateY(${ry2}deg)`;
+  });
+  c.addEventListener('mouseleave',()=>c.style.transform='');
+});
+
+/* ── PROJECT 3D ── */
+document.querySelectorAll('.pc').forEach(c=>{
+  c.addEventListener('mousemove',e=>{
+    const r=c.getBoundingClientRect();
+    const rx2=((e.clientY-r.top-r.height/2)/r.height)*-5;
+    const ry2=((e.clientX-r.left-r.width/2)/r.width)*5;
+    c.style.transform=`translateY(-8px) perspective(800px) rotateX(${rx2}deg) rotateY(${ry2}deg)`;
+  });
+  c.addEventListener('mouseleave',()=>c.style.transform='');
+});
+
+/* ── FORM ── */
+const form=document.getElementById('cform');
+const succ=document.getElementById('fsuccess');
+form&&form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const btn=form.querySelector('button[type=submit]');
+  const orig=btn.innerHTML;
+  btn.innerHTML='<span>Sending...</span><i class="fa fa-spinner fa-spin"></i>';
+  btn.disabled=true;
+  setTimeout(()=>{btn.innerHTML=orig;btn.disabled=false;succ.classList.add('show');form.reset();setTimeout(()=>succ.classList.remove('show'),5000);},1800);
+});
+
+/* ── BACK TOP ── */
+const btt=document.getElementById('btt');
+window.addEventListener('scroll',()=>btt.classList.toggle('show',window.scrollY>400));
+btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* ── TICKER PAUSE ── */
+const tt=document.getElementById('ttrack');
+tt&&tt.addEventListener('mouseenter',()=>tt.style.animationPlayState='paused');
+tt&&tt.addEventListener('mouseleave',()=>tt.style.animationPlayState='running');
+
+/* ── GLITCH ── */
+const gl=document.getElementById('glitchLine');
+if(gl){
+  const orig=gl.textContent;
+  const chars='▓█▒░╔╗╝╚│─';
+  let busy=false;
+  function glitch(){
+    if(busy)return;busy=true;let i=0;
+    const iv=setInterval(()=>{
+      gl.textContent=orig.split('').map((ch,idx)=>{
+        if(idx<i)return orig[idx];
+        if(ch===' ')return ' ';
+        return chars[Math.floor(Math.random()*chars.length)];
+      }).join('');
+      if(i>=orig.length){clearInterval(iv);gl.textContent=orig;busy=false;}
+      i+=1.2;
+    },40);
+  }
+  setInterval(glitch,4500);
+}
+
+/* ── PARALLAX HERO ── */
+const hv=document.querySelector('.hvisual');
+const hs=document.getElementById('home');
+if(hs&&hv){
+  hs.addEventListener('mousemove',e=>{
+    const r=hs.getBoundingClientRect();
+    const dx=(e.clientX-r.left-r.width/2)/(r.width/2);
+    const dy=(e.clientY-r.top-r.height/2)/(r.height/2);
+    hv.style.transform=`translate(${dx*14}px,${dy*10}px)`;
+  });
+  hs.addEventListener('mouseleave',()=>hv.style.transform='');
+}
+
+/* ── SMOOTH SCROLL ── */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const t=document.querySelector(this.getAttribute('href'));
+    if(t){e.preventDefault();window.scrollTo({top:t.offsetTop-72,behavior:'smooth'});}
+  });
+});
+
+console.log('%c⚡ Unicellular Pvt Ltd — Built for the Future of Connectivity','color:#00d4ff;font-size:14px;font-weight:bold;');
+})();
+</script>
+</body>
+</html>
